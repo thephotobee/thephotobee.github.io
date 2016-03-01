@@ -408,10 +408,43 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form accept-charset="UTF-8" action="https://formkeep.com/f/10cabd50e64a" method="POST">
-                        <input type="hidden" name="utf8" value="✓">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <button type="submit">Submit</button>
+<!--
+<form accept-charset="UTF-8" action="https://formkeep.com/f/10cabd50e64a" method="POST">
+    <input type="hidden" name="utf8" value="✓">
+    <input type="email" name="email" placeholder="Your Email">
+    <button type="submit">Submit</button>
+</form>
+-->
+                                        <form accept-charset="UTF-8" action="https://formkeep.com/f/10cabd50e64a" method="POST">
+
+<!--                    <form action="http://formspree.io/stephievictoria@gmail.com" method="POST" name="process_contactform" class="contact about_form" role="form">-->
+                        <fieldset class="contact_fieldset">
+                            <legend>Contact Us</legend>
+                            <p class="p_about_contact">Please fill out the form below and we'll get back to you as soon as possible, thanks!</p>
+                            <ul>
+                                <li class="contact_li">
+                                    <label for="first_name">First Name:</label>
+                                    <input id="first_name" role="textbox" aria-required="true" class="input_about stored" name="contactpagefirstname" type="text" placeholder="First" title="First Name" />
+                                </li>
+                                <li class="contact_li">
+                                    <label for="last_name">Last Name:</label>
+                                    <input id="last_name" name="contactpagelastname" role="textbox" aria-required="true" class="input_about stored" type="text" placeholder="Last" title="Last Name" required />
+                                </li>
+                                <li class="contact_li">
+                                    <label for="contact_email">Email Address:</label>
+                                    <input id="contact_email" role="textbox" aria-required="true" class="input_about stored" type="email" name="contactpageemail" title="email address" placeholder="Email" required />
+                                </li>
+                                <li id="contact_li">
+                                    <label for="contact_subject">Subject:</label>
+                                    <textarea id="contact_subject" role="textbox" rows=1 cols=110 aria-required="true" type="textbox" name="contactpagesubject" class="input_about stored" placeholder="Subject" required></textarea>
+                                </li>
+                                <li id="contact_li">
+                                    <label for="contact_message">Message:</label>
+                                    <textarea id="contact_message" role="textbox" rows=5 cols=110 aria-required="true" type="textbox" class="input_about stored" name="contactpagemessage" placeholder="Message" required></textarea>
+                                </li>
+                            </ul>
+                            <input type="submit" name="submit" id="submit" value="Submit" onclick="clearData()" />
+                        </fieldset>
                     </form>
                     <!--
                     <form name="sentMessage" id="contactForm" novalidate>
